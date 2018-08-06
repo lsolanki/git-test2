@@ -1,0 +1,23 @@
+{
+  "name": "git-test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsolanki/git-test2.git"
+  },
+  "author": "lsolanki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsolanki/git-test2/issues"
+  },
+  "homepage": "https://github.com/lsolanki/git-test2#readme"
+}
