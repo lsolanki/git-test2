@@ -44,7 +44,7 @@ class DishDetail extends Component {
 	          			<h5 className="m-1 mt-3">{dish.comment}</h5>
           				<div className="row">
           					<p className="col-md-5 col-12"><small><strong>Author:</strong> {dish.author}</small></p>
-          					<p className="col-md-7 col-12"><small><strong>Date:</strong> {dish.date}</small></p>
+          					<p className="col-md-7 col-12"><small><strong>Date:</strong> {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(dish.date)))}</small></p>
 	      				</div>
 	      			</div>
 	    		);
