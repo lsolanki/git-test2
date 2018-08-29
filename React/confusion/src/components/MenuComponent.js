@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardTitle, CardText, CardImgOverlay, CardBody } from 'reactstrap';
 
 
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-
 class Menu extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +13,6 @@ class Menu extends Component {
 
 
     onDishSelect(dish){
-        debugger;
         this.setState({selectedDish: dish});
     }
 
@@ -45,7 +42,7 @@ class Menu extends Component {
         const menu = this.props.dishes.map((dish) => {
             return(
                 <div key={dish.id} className="col-3">
-                    <Card onClick ={() => this.onDishSelect(dish)}>
+                    <Card onClick={() => this.onDishSelect(dish)}>
                         <CardImg width="100%" src={dish.image} alt={dish.name} />
                         <CardImgOverlay>
                             <CardTitle>{dish.name}</CardTitle>

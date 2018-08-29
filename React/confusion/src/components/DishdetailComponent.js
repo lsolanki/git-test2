@@ -63,7 +63,7 @@ class DishDetail extends Component {
 		const dishDetail = this.props.dishes.map((dish) => {
 			return(
 				<div key={dish.id} className="col-12 col-md-5 m-1 mt-5">
-					<Card onClick= {() => this.onSelectDetailDish(dish)}>
+					<Card onClick={() => this.onSelectDetailDish(dish)}>
 						<CardImg width="100%" src={dish.image} alt={dish.name} />
 						<CardImgOverlay>
 							<CardTitle>{dish.name}</CardTitle>
