@@ -1,14 +1,16 @@
 {
   "name": "git-test2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learn react ",
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "react-popper": "^0.9.2",
     "reactstrap": "^5.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
